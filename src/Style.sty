@@ -32,12 +32,15 @@
 	\setlength{\partopsep}{0pt}
 }}{\end{list}}
 
-% redefinition of the list enumeration style
-%\renewcommand{\labelitemi}{$\bullet$}
-%\renewcommand{\labelitemii}{$\bullet$}
-%\renewcommand{\labelitemiii}{$\bullet$}
-%\renewcommand{\labelitemiv}{$\bullet$}
-% redefinition of the list itemize environment
+
+\newcommand{\img}[2] {
+	\begin{figure}[h!]
+		\center{\includegraphics[width=0.8\textwidth]{#1}}
+		\caption{#2}
+		\label{fig:#1}
+	\end{figure}
+}
+
 \renewenvironment{itemize}{
 	\begin{list}{\labelitemi}
 	  {\def\makelabel##1{\hss ##1}
@@ -56,23 +59,32 @@
 		\normalsize{Федеральное государственное бюджетное образовательное учреждение высшего образования}\\
 		\normalsize{\textbf{«МИРЭА --- Российский технологический университет»}}\\
 		\large{\textbf{РТУ МИРЭА}}\\
-		\bigskip \hrule \smallskip
-		\normalsize{Институт Информационных технологий}\\
+		\bigskip \hrule \smallskip \hrule \smallskip
+		\textbf{Институт Информационных технологий (ИИТ)}\\
+		\textbf{Кафедра практической и прикладной инфоматики (ППИ)}\\
 		\vfill
-		\normalsize{Кафедра Математического обеспечения и стандартизации информационных технологий}\\
+		\large{\textbf{ОТЧЕТ ПО ПРАКТИЧЕСКОЙ РАБОТЕ}}\\
+		\normalsize{по дисциплине «Анализ и концептуальное моделирование систем»}\\
 		\vfill
-		\large{\textbf{Отчет по практической работе №1}}\\
-		\normalsize{по дисциплине «Разработка мобильных приложений»}\\
+		\large{\textbf{Практическое задание № #1}}\\
 		\vfill
 		\vfill
-		\normalsize{
-			\begin{tabular}{lrr}
-				\textbf{Выполнил:} & &\\
-				Студент группы ИКБО-06-21 & & Шестаков Я.Е. \\\\
-				\textbf{Проверил:} &  доцент & Синицын И.В. \\\\
-			\end{tabular}
-		}\\
+		\begin{flushleft}
+			\normalsize{
+				\begin{tabular}{llr}
+					Студент группы & ИКБО-06-21  Шестаков Я.Е. &  \underline{\hspace{3cm}}   \\\\
+					& Илюхина Н.П  & \underline{\hspace{3cm}}  \\\\
+				\end{tabular}
+			}\\
+		\end{flushleft}
 		\vfill
+		\begin{flushleft}
+			\normalsize{
+				\begin{tabular}{lll}
+					Отчет предоставлен &  «\underline{\hspace{1cm}}»\underline{\hspace{3cm}} 2023г & \\\\
+				\end{tabular}
+			}\\
+		\end{flushleft}
 	\end{center}
 
 	\begin{center} Москва 2023 \end{center}
