@@ -5,7 +5,7 @@
 \usepackage[utf8]{inputenc} % correct encoding source file
 \usepackage[english,russian]{babel} % correct language
 \usepackage[labelsep=period]{caption}
-
+\usepackage{longtable}
 
 \frenchspacing
 \pagestyle{plain}
@@ -24,10 +24,10 @@
 \renewcommand{\figurename}{Рисунок}
 
 \newcommand{\img}[2] {
-	\begin{figure}[h!]
+	\begin{figure}[ht!]
 		\center{\includegraphics[width=0.9\textwidth]{#1}}
 		\caption{#2}
-		\label{img:#1}
+		\label{fig:#1}
 	\end{figure}
 }
 
