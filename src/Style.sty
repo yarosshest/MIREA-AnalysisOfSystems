@@ -1,5 +1,18 @@
 \ProvidesPackage{Style}
 
+
+
+\frenchspacing
+\pagestyle{plain}
+\usepackage{enumitem}
+\setlist{nosep}
+\setlist[enumerate]{label*=\arabic*.}
+\setlist[description]{style=nextline}
+\usepackage[left=3cm, right=1.5cm, vmargin=2cm]{geometry}
+\linespread{1.5} % line spacing 1.5
+\usepackage{indentfirst} % indent first paragraph
+\setlength{\parindent}{1.25cm}
+\sloppy
 \usepackage{cmap} % for pdfLaTeX
 \usepackage[T1,T2A]{fontenc} % correct encoding for pdfLaTeX
 \usepackage[utf8]{inputenc} % correct encoding source file
@@ -7,12 +20,7 @@
 \usepackage[labelsep=period]{caption}
 \usepackage{longtable}
 
-\frenchspacing
-\pagestyle{plain}
-
-\usepackage[left=3cm, right=1.5cm, vmargin=2cm]{geometry}
 \linespread{1.5} % line spacing 1.5
-\usepackage{indentfirst} % indent first paragraph
 \setlength{\parindent}{1.25cm}
 \sloppy
 
@@ -91,3 +99,4 @@
 	\newpage
 }
 
+\newcommand\includegrph[1]{\includegraphics[width=1\textwidth]{#1}}
